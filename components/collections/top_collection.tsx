@@ -41,7 +41,7 @@ const Top_collection = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-[1.875rem] lg:grid-cols-4">
-            {topCollections
+            {/* {topCollections
               ? topCollections?.[0]?.map((collection, i) => {
                   const { id, bannerImage, name, verified, volume } =
                     collection;
@@ -98,7 +98,7 @@ const Top_collection = () => {
                     </div>
                   );
                 })
-              : null}
+              : null} */}
           </div>
           <div className="mt-10 text-center">
             <Link href="/rankings">
