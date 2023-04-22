@@ -6,22 +6,37 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchTopCollection } from "../../lib/fetch-top-collections";
 
 const Top_collection = () => {
-  const { data: topCollections } = useQuery(["topCollections"], () => fetchTopCollection(), {
-    staleTime: Infinity,
-  });
+  const { data: topCollections } = useQuery(
+    ["topCollections"],
+    () => fetchTopCollection(),
+    {
+      staleTime: Infinity,
+    }
+  );
 
   return (
     <div>
       <section className="relative py-24 dark:bg-jacarta-800">
         <picture className="absolute inset-0 pointer-events-none -z-10 dark:hidden">
-          <img src="/images/gradient_light.jpg" alt="gradient" className="w-full h-full" />
+          <img
+            src="/images/gradient_light.jpg"
+            alt="gradient"
+            className="w-full h-full"
+          />
         </picture>
         <div className="container">
           <div className="flex items-center justify-center mb-12 text-lg text-center font-display text-jacarta-700 sm:text-3xl dark:text-white gap-x-3">
-            <HeadLine text="Top collections over" classes="inline" image={""} pera={""} />
+            <HeadLine
+              text="Top collections over"
+              classes="inline"
+              image={""}
+              pera={""}
+            />
 
             <div className="relative dropdown">
-              <p className="inline-flex items-center dropdown-toggle text-accent">Last 30 days</p>
+              <p className="inline-flex items-center dropdown-toggle text-accent">
+                Last 30 days
+              </p>
             </div>
           </div>
 
@@ -72,7 +87,9 @@ const Top_collection = () => {
                           {name?.substring(0, 10)}
                         </span>
                       </a>
-                      <span className="text-sm dark:text-jacarta-300">{volume} CORE</span>
+                      <span className="text-sm dark:text-jacarta-300">
+                        {volume} CORE
+                      </span>
                     </div>
                   </div>
                 );
