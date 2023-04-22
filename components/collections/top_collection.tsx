@@ -40,8 +40,8 @@ const Top_collection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-[1.875rem] lg:grid-cols-4">
-            {/* {topCollections
+          {/* <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-[1.875rem] lg:grid-cols-4">
+            {topCollections
               ? topCollections?.[0]?.map((collection, i) => {
                   const { id, bannerImage, name, verified, volume } =
                     collection;
@@ -98,8 +98,8 @@ const Top_collection = () => {
                     </div>
                   );
                 })
-              : null} */}
-          </div>
+              : null}
+          </div> */}
           <div className="mt-10 text-center">
             <Link href="/rankings">
               <a className="inline-block px-8 py-3 font-semibold text-center text-white transition-all rounded-full bg-accent shadow-accent-volume hover:bg-accent-dark">
